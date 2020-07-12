@@ -16,6 +16,77 @@
   <meta name="author" content="Hengli Wang">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <style type="text/css">
+    /* Color scheme stolen from Sergey Karayev */
+
+    a {
+      color: #1772d0;
+      text-decoration: none;
+    }
+
+    a:focus,
+    a:hover {
+      color: #f09228;
+      text-decoration: none;
+    }
+
+    body,
+    td,
+    th,
+    tr,
+    p,
+    a {
+      font-family: 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 14px
+    }
+
+    strong {
+      font-family: 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 14px;
+    }
+
+    heading {
+      font-family: 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 22px;
+    }
+
+    papertitle {
+      font-family: 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 14px;
+      font-weight: 700
+    }
+
+    mainname {
+      font-family: 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 32px;
+    }
+
+    .one {
+      width: 160px;
+      height: 160px;
+      position: relative;
+    }
+
+    .two {
+      width: 160px;
+      height: 160px;
+      position: absolute;
+      transition: opacity .2s ease-in-out;
+      -moz-transition: opacity .2s ease-in-out;
+      -webkit-transition: opacity .2s ease-in-out;
+    }
+
+    .fade {
+      transition: opacity .2s ease-in-out;
+      -moz-transition: opacity .2s ease-in-out;
+      -webkit-transition: opacity .2s ease-in-out;
+    }
+
+    span.highlight {
+      background-color: #ffffd0;
+    }
+  </style>
+
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
   <link rel="icon" type="image/png" href="images/hkust.png">
 </head>
@@ -31,11 +102,11 @@
             </td>
             <td style="padding:2.5%;width:63%;vertical-align:middle">
               <p style="text-align:left">
-                <name>Hengli Wang (王恒立)</name>
+                <mainname>Hengli Wang (王恒立)</mainname>
               </p>
               <p>
                 Ph.D. candidate <br>
-                <a href="https://ram-lab.com/">Robotics Institute</a>, <br>
+                <a href="https://ri.ust.hk/">Robotics Institute</a>, <br>
                 <a href="https://www.ece.ust.hk/">Department of Electronic and Computer Engineering</a>, <br>
                 <a href="https://www.ust.hk/">The Hong Kong University of Science and Technology</a>
               </p>
@@ -51,7 +122,7 @@
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>About me</heading>
               <p>
-                I am Hengli Wang, a second-year Ph.D. candidate of <a href="www.ram-lab.com"> RAM-LAB </a> at the Robotics Institute of Hong Kong University of Science and Technology (HKUST),
+                I am Hengli Wang, a second-year Ph.D. candidate of <a href="https://ram-lab.com/"> RAM-LAB </a> at the Robotics Institute of Hong Kong University of Science and Technology (HKUST),
                 supervised by <a href="https://scholar.google.com/citations?user=CdV5LfQAAAAJ&hl=en"> Prof. Ming Liu </a>.
                 I received my B.E. from <a href="www.zju.edu.cn"> Zhejiang University (ZJU) </a> in 2018.
               </p>
@@ -65,7 +136,7 @@
             <td style="padding:20px;padding-bottom: 10px;width:100%;vertical-align:middle">
               <heading>Research</heading>
               <p>
-                My research interests mainly include computer vision and visual navigation on mobile robots. Specifically, I am working on the computation of visual features such as stereo matching, optical flow estimation and surface normal estimation. I am also focusing on improving perception performance and visual navigation performance by exploiting the aforementioned visual features.
+                My research interests mainly include computer vision and visual navigation on mobile robots. Specifically, I am working on the computation of visual features such as stereo matching, optical flow estimation and surface normal estimation. I am also focusing on improving perception performance and visual navigation performance by exploiting the aforementioned visual features. Representative works are <span class="highlight">highlighted</span>.
               </p>
             </td>
           </tr>
@@ -114,16 +185,6 @@
               <div class="one">
                 <div class="two" id='font_image'><img src='images/wang2019self_front.png' width=160px></div>
               </div>
-              <!-- <script type="text/javascript">
-                function font_start() {
-                  document.getElementById('font_image').style.opacity = "1";
-                }
-
-                function font_stop() {
-                  document.getElementById('font_image').style.opacity = "0";
-                }
-                font_stop()
-              </script> -->
             </td>
             <td style="padding:20px;padding-top: 25px;width:75%;vertical-align:top">
               <a href="https://ieeexplore.ieee.org/abstract/document/8786197">
