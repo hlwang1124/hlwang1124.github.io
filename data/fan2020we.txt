@@ -1,5 +1,5 @@
 @inproceedings{fan2020we,
-  title        = {We learn better road pothole detection: from attention aggregation to adversarial domain adaptation},
+  title        = {We learn better road pothole detection: From attention aggregation to adversarial domain adaptation},
   author       = {Fan, Rui and Wang, Hengli and Bocus, Mohammud J and Liu, Ming},
   booktitle    = {European Conference on Computer Vision},
   pages        = {285--300},
