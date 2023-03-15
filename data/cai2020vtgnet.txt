@@ -1,0 +1,11 @@
+@article{cai2020vtgnet,
+  title     = {{VTGNet}: A vision-based trajectory generation network for autonomous vehicles in urban environments},
+  author    = {Cai, Peide and Sun, Yuxiang and Wang, Hengli and Liu, Ming},
+  journal   = {IEEE Transactions on Intelligent Vehicles},
+  volume    = {6},
+  number    = {3},
+  pages     = {419--429},
+  year      = {2021},
+  publisher = {IEEE},
+  doi       = {10.1109/TIV.2020.3033878}
+}

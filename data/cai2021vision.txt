@@ -1,0 +1,11 @@
+@article{cai2021vision,
+  title     = {Vision-based autonomous car racing using deep imitative reinforcement learning},
+  author    = {Cai, Peide and Wang, Hengli and Huang, Huaiyang and Liu, Yuxuan and Liu, Ming},
+  journal   = {IEEE Robotics and Automation Letters},
+  volume    = {6},
+  number    = {4},
+  pages     = {7262--7269},
+  year      = {2021},
+  publisher = {IEEE},
+  doi       = {10.1109/LRA.2021.3097345}
+}

@@ -1,0 +1,11 @@
+@article{fan2021learning,
+  title     = {Learning collision-free space detection from stereo images: Homography matrix brings better data augmentation},
+  author    = {Fan, Rui and Wang, Hengli and Cai, Peide and Wu, Jin and Bocus, Mohammud Junaid and Qiao, Lei and Liu, Ming},
+  journal   = {IEEE/ASME Transactions on Mechatronics},
+  volume    = {27},
+  number    = {1},
+  pages     = {225--233},
+  year      = {2022},
+  publisher = {IEEE},
+  doi       = {10.1109/TMECH.2021.3061077}
+}

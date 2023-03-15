@@ -1,0 +1,11 @@
+@article{fan2021three,
+  title     = {Three-filters-to-normal: An accurate and ultrafast surface normal estimator},
+  author    = {Fan, Rui and Wang, Hengli and Xue, Bohuan and Huang, Huaiyang and Wang, Yuan and Liu, Ming and Pitas, Ioannis},
+  journal   = {IEEE Robotics and Automation Letters},
+  volume    = {6},
+  number    = {3},
+  pages     = {5405--5412},
+  year      = {2021},
+  publisher = {IEEE},
+  doi       = {10.1109/LRA.2021.3067308}
+}

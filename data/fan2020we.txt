@@ -1,0 +1,10 @@
+@inproceedings{fan2020we,
+  title     = {We learn better road pothole detection: From attention aggregation to adversarial domain adaptation},
+  author    = {Fan, Rui and Wang, Hengli and Bocus, Mohammud J and Liu, Ming},
+  booktitle = {Computer Vision -- ECCV 2020 Workshops},
+  pages     = {285--300},
+  year      = {2020},
+  editor    = {Bartoli, Adrien and Fusiello, Andrea},
+  publisher = {Springer International Publishing},
+  doi       = {10.1007/978-3-030-66823-5_17}
+}

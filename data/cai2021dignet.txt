@@ -1,0 +1,9 @@
+@inproceedings{cai2021dignet,
+  title        = {DiGNet: Learning scalable self-driving policies for generic traffic scenarios with graph neural networks},
+  author       = {Cai, Peide and Wang, Hengli and Sun, Yuxiang and Liu, Ming},
+  booktitle    = {2021 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
+  pages        = {8979--8984},
+  year         = {2021},
+  organization = {IEEE},
+  doi          = {10.1109/IROS51168.2021.9636376}
+}

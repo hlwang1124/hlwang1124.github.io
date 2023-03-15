@@ -1,0 +1,11 @@
+@article{cai2022dq,
+  title     = {DQ-GAT: Towards Safe and Efficient Autonomous Driving with Deep Q-Learning and Graph Attention Networks},
+  author    = {Cai, Peide and Wang, Hengli and Sun, Yuxiang and Liu, Ming},
+  journal   = {IEEE Transactions on Intelligent Transportation Systems},
+  volume    = {23},
+  number    = {11},
+  pages     = {21102--21112},
+  year      = {2022},
+  publisher = {IEEE},
+  doi       = {10.1109/TITS.2022.3184990}
+}

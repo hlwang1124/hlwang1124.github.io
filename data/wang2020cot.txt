@@ -1,0 +1,12 @@
+@inproceedings{wang2020cot,
+  title     = {{CoT-AMFlow}: Adaptive modulation network with co-teaching strategy for unsupervised optical flow estimation},
+  author    = {Wang, Hengli and Fan, Rui and Liu, Ming},
+  booktitle = {Proceedings of the 2020 Conference on Robot Learning},
+  pages     = {143--155},
+  year      = {2021},
+  editor    = {Kober, Jens and Ramos, Fabio and Tomlin, Claire},
+  volume    = {155},
+  series    = {Proceedings of Machine Learning Research},
+  month     = {16--18 Nov},
+  publisher = {PMLR}
+}

@@ -1,0 +1,10 @@
+@inproceedings{wang2020atg,
+  title     = {{ATG-PVD}: Ticketing parking violations on a drone},
+  author    = {Wang, Hengli and Liu, Yuxuan and Huang, Huaiyang and Pan, Yuheng and Yu, Wenbin and Jiang, Jialin and Lyu, Dianbin and Bocus, Mohammud J and Liu, Ming and Pitas, Ioannis and others},
+  booktitle = {Computer Vision -- ECCV 2020 Workshops},
+  pages     = {541--557},
+  year      = {2020},
+  editor    = {Bartoli, Adrien and Fusiello, Andrea},
+  publisher = {Springer International Publishing},
+  doi       = {10.1007/978-3-030-66823-5_32}
+}

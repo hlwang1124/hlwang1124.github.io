@@ -1,0 +1,9 @@
+@inproceedings{wang2021s2p2,
+  title        = {{S2P2}: Self-supervised goal-directed path planning using {RGB-D} data for robotic wheelchairs},
+  author       = {Wang, Hengli and Sun, Yuxiang and Fan, Rui and Liu, Ming},
+  booktitle    = {2021 IEEE International Conference on Robotics and Automation (ICRA)},
+  pages        = {11422--11428},
+  year         = {2021},
+  organization = {IEEE},
+  doi          = {10.1109/ICRA48506.2021.9561314}
+}

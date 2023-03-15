@@ -1,0 +1,765 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173267821-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-173267821-1');
+  </script>
+
+  <title>Hengli Wang</title>
+
+  <meta name="author" content="Hengli Wang">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style type="text/css">
+    /* Color scheme stolen from Sergey Karayev */
+
+    a {
+      color: #1772d0;
+      text-decoration: none;
+    }
+
+    a:focus,
+    a:hover {
+      color: #f09228;
+      text-decoration: none;
+    }
+
+    body,
+    td,
+    th,
+    tr,
+    p,
+    a {
+      font-family: 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 14px
+    }
+
+    strong {
+      font-family: 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 14px;
+    }
+
+    heading {
+      font-family: 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 22px;
+    }
+
+    papertitle {
+      font-family: 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 14px;
+      font-weight: 700
+    }
+
+    mainname {
+      font-family: 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 32px;
+    }
+
+    .one {
+      width: 160px;
+      height: 160px;
+      position: relative;
+    }
+
+    .two {
+      width: 160px;
+      height: 160px;
+      position: absolute;
+      transition: opacity .2s ease-in-out;
+      -moz-transition: opacity .2s ease-in-out;
+      -webkit-transition: opacity .2s ease-in-out;
+    }
+
+    .fade {
+      transition: opacity .2s ease-in-out;
+      -moz-transition: opacity .2s ease-in-out;
+      -webkit-transition: opacity .2s ease-in-out;
+    }
+
+    span.highlight {
+      background-color: #ffffd0;
+    }
+  </style>
+
+  <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+  <link rel="icon" type="image/png" href="images/hkust.png">
+  <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> -->
+  <link href="css/fontawesome-free-5.15.1-web/css/all.css" rel="stylesheet">
+</head>
+
+<body>
+  <table
+    style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+    <tbody>
+      <tr style="padding:0px">
+        <td style="padding:0px">
+          <table
+            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <tbody>
+              <tr style="padding:0px">
+                <td style="padding:2.5%;width:40%;max-width:40%">
+                  <a href="images/photo.png"><img style="width:75%;max-width:100%" alt="profile photo"
+                      src="images/photo.png" class="hoverZoomLink"></a>
+                </td>
+                <td style="padding:2.5%;width:63%;vertical-align:middle">
+                  <p style="text-align:left">
+                    <mainname>Hengli Wang (王恒立)</mainname>
+                  </p>
+                  <p>
+                    Ph.D. <br>
+                    <a href="https://www.ece.ust.hk/">Department of Electronic and Computer Engineering</a> <br>
+                    <a href="https://www.ust.hk/">The Hong Kong University of Science and Technology</a>
+                  </p>
+                  <p>
+                    Email: hwangdf@connect.ust.hk
+                  </p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table
+            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <tbody>
+              <tr>
+                <td style="padding:20px;width:100%;vertical-align:middle">
+                  <heading>About me</heading>
+                  <p>
+                    Hello, this is Hengli Wang. I got my Ph.D. degree from <a href="https://www.ust.hk/">The Hong Kong University of Science and Technology (HKUST)</a> in 2022, supervised by <a href="https://facultyprofiles.ust.hk/profiles.php?profile=ming-liu-eelium"> Prof. Ming Liu </a> in <a href="https://ram-lab.com/"> RAM-LAB </a>. Prior to this, I received my B.E. degree from <a href="http://www.zju.edu.cn/english/"> Zhejiang University (ZJU) </a> in 2018.
+                  </p>
+                  <p style="text-align:center">
+                    <a href="./data/cv_hlwang.pdf">
+                      <i class="far fa-file-pdf" , style="color:rgb(50,130,220)"></i> CV</a> &nbsp/&nbsp
+                    <a href="https://github.com/hlwang1124">
+                      <i class="fab fa-github" , style="color:rgb(50,130,220)"></i> Github</a> &nbsp/&nbsp
+                    <a href="https://scholar.google.com/citations?user=SeavCLcAAAAJ&hl=en">
+                      <i class="fa fa-graduation-cap" , style="color:rgb(50,130,220)"></i> Google Scholar</a>
+                  </p>
+                </td>
+              </tr>
+
+              <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+                <tr>
+                  <td style="padding:20px;padding-bottom: 10px;width:100%;vertical-align:middle">
+                    <heading>Research</heading>
+                    <p>
+                      My research interest is mainly <strong>visual perception</strong> for <strong>autonomous driving</strong>. Specifically, I am working on the computation of visual features including <strong>stereo matching</strong>, <strong>optical flow estimation</strong>, and <strong>surface normal estimation</strong>. I am also focusing on improving the <strong>perception</strong> performance by exploiting the visual features, especially <strong>semantic segmentation in the image space and in the BEV space</strong>. Selected publications are shown as follows, and representative works are <span class="highlight">highlighted</span> (* indicates equal contribution).
+                    </p>
+                  </td>
+                </tr>
+              </table>
+
+              <table
+                style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                <tbody>
+
+                  <tr onmouseout="font_stop()" onmouseover="font_start()" bgcolor="">
+                    <td style="padding:20px;width:25%;vertical-align:middle">
+                      <img src='images/cai2022dq_front.png' width=160px>
+                    </td>
+                    <td style="padding:20px;padding-top: 25px;width:75%;vertical-align:top">
+                      <a href="https://ieeexplore.ieee.org/document/9819830/">
+                        <papertitle>DQ-GAT: Towards Safe and Efficient Autonomous Driving with Deep Q-Learning and Graph Attention Networks</papertitle>
+                      </a>
+                      <br>
+                      <em>IEEE Transactions on Intelligent Transportation Systems (T-ITS)</em>, 2022
+                      <br>
+                      <br>
+                      Peide Cai, <strong>Hengli Wang</strong>, Yuxiang Sun, Ming Liu
+                      <br>
+                      <br>
+                      <a href="https://arxiv.org/abs/2108.05030"> <i class="fas fa-link" ,
+                          style="color:rgb(50,130,220)"></i> arXiv</a> /
+                      <a href="./data/cai2022dq.txt"> <i class="fas fa-file" , style="color:rgb(50,130,220)"></i>
+                        bibtex</a> /
+                        <a href="https://caipeide.site/dq-gat/"> <i class="fas fa-columns" ,
+                          style="color:rgb(50,130,220)"></i> project page</a>
+                      <br>
+                      <p></p>
+                    </td>
+                  </tr>
+
+                  <tr onmouseout="font_stop()" onmouseover="font_start()" bgcolor="#ffffd0">
+                    <td style="padding:20px;width:25%;vertical-align:middle">
+                      <img src='images/wang2021dynamic_front.png' width=160px>
+                    </td>
+                    <td style="padding:20px;padding-top: 25px;width:75%;vertical-align:top">
+                      <a href="https://ieeexplore.ieee.org/document/9385989">
+                        <papertitle>Dynamic Fusion Module Evolves Drivable Area and Road Anomaly Detection: A Benchmark and Algorithms</papertitle>
+                      </a>
+                      <br>
+                      <em>IEEE Transactions on Cybernetics (T-CYB)</em>, 2021 (IF: 11.448)
+                      <br>
+                      <br>
+                      <strong>Hengli Wang*</strong>, Rui Fan*, Yuxiang Sun, Ming Liu
+                      <br>
+                      <a href="https://arxiv.org/abs/2103.02433"> <i class="fas fa-link" ,
+                          style="color:rgb(50,130,220)"></i> arXiv</a> /
+                      <a href="./data/wang2021dynamic.txt"> <i class="fas fa-file" , style="color:rgb(50,130,220)"></i>
+                        bibtex</a> /
+                      <a href="https://sites.google.com/view/gmrb"> <i class="fas fa-columns" ,
+                          style="color:rgb(50,130,220)"></i> project page</a>
+                      <br>
+                      <p></p>
+                    </td>
+                  </tr>
+
+                  <tr onmouseout="font_stop()" onmouseover="font_start()" bgcolor="">
+                    <td style="padding:20px;width:25%;vertical-align:middle">
+                      <img src='images/fan2021graph_front.png' width=160px>
+                    </td>
+                    <td style="padding:20px;padding-top: 25px;width:75%;vertical-align:top">
+                      <a href="https://ieeexplore.ieee.org/document/9547682">
+                        <papertitle>Graph Attention Layer Evolves Semantic Segmentation for Road Pothole Detection: A Benchmark and Algorithms</papertitle>
+                      </a>
+                      <br>
+                      <em>IEEE Transactions on Image Processing (T-IP)</em>, 2021 (IF: 10.856)
+                      <br>
+                      <br>
+                      Rui Fan*, <strong>Hengli Wang*</strong>, Yuan Wang*, Ming Liu, Ioannis Pitas
+                      <br>
+                      <br>
+                      <a href="https://arxiv.org/abs/2109.02711"> <i class="fas fa-link" ,
+                          style="color:rgb(50,130,220)"></i> arXiv</a> /
+                      <a href="./data/fan2021graph.txt"> <i class="fas fa-file" , style="color:rgb(50,130,220)"></i>
+                        bibtex</a> /
+                      <a href="https://github.com/ruirangerfan/GAL-DeepLabv3Plus"> <i class="fab fa-github" ,
+                        style="color:rgb(50,130,220)"></i> code</a> /
+                      <a href="https://github.com/ruirangerfan/stereo_pothole_datasets"> <i class="fas fa-database"
+                          , style="color:rgb(50,130,220)"></i> dataset</a>
+                      <br>
+                      <p></p>
+                    </td>
+                  </tr>
+
+                  <tr onmouseout="font_stop()" onmouseover="font_start()" bgcolor="#ffffd0">
+                    <td style="padding:20px;width:25%;vertical-align:middle">
+                      <img src='images/wang2021pvstereo_front.png' width=160px>
+                    </td>
+                    <td style="padding:20px;padding-top: 25px;width:75%;vertical-align:top">
+                      <a href="https://ieeexplore.ieee.org/document/9384157">
+                        <papertitle>PVStereo: Pyramid Voting Module for End-to-End Self-Supervised Stereo Matching
+                        </papertitle>
+                      </a>
+                      <br>
+                      <em>IEEE Robotics and Automation Letters (RA-L)</em>, 2021
+                      <br>
+                      presented at <em>IEEE International Conference on Robotics and Automation (ICRA)</em>, 2021
+                      <br>
+                      <br>
+                      <strong>Hengli Wang*</strong>, Rui Fan*, Peide Cai, Ming Liu
+                      <br>
+                      <a href="https://arxiv.org/abs/2103.07094"> <i class="fas fa-link" ,
+                          style="color:rgb(50,130,220)"></i> arXiv</a> /
+                      <a href="./data/wang2021pvstereo.txt"> <i class="fas fa-file" , style="color:rgb(50,130,220)"></i>
+                        bibtex</a> /
+                      <a href="https://sites.google.com/view/pvstereo"> <i class="fas fa-columns" ,
+                          style="color:rgb(50,130,220)"></i> project page</a> /
+                      <a href="https://1drv.ms/v/s!AtQJ3jRpXokcg5AHjsMawP_h8dJ8yg?e=4fzMGE"> <i class="fas fa-film", style="color:rgb(50,130,220)"></i> video</a>
+                      <br>
+                      <p></p>
+                    </td>
+                  </tr>
+
+                  <tr onmouseout="font_stop()" onmouseover="font_start()" bgcolor="#ffffd0">
+                    <td style="padding:20px;width:25%;vertical-align:middle">
+                      <img src='images/fan2021three_front.png' width=160px>
+                    </td>
+                    <td style="padding:20px;padding-top: 25px;width:75%;vertical-align:top">
+                      <a href="https://ieeexplore.ieee.org/document/9381580">
+                        <papertitle>Three-Filters-to-Normal: An Accurate and Ultrafast Surface Normal Estimator
+                        </papertitle>
+                      </a>
+                      <br>
+                      <em>IEEE Robotics and Automation Letters (RA-L)</em>, 2021
+                      <br>
+                      presented at <em>IEEE International Conference on Robotics and Automation (ICRA)</em>, 2021
+                      <br>
+                      <br>
+                      Rui Fan*, <strong>Hengli Wang*</strong>, Bohuan Xue*, Huaiyang Huang, Yuan Wang, Ming Liu, Ioannis
+                      Pitas
+                      <br>
+                      <a href="https://arxiv.org/abs/2005.08165"> <i class="fas fa-link" ,
+                          style="color:rgb(50,130,220)"></i> arXiv</a> /
+                      <a href="./data/fan2021three.txt"> <i class="fas fa-file" , style="color:rgb(50,130,220)"></i>
+                        bibtex</a> /
+                      <a href="https://sites.google.com/view/3f2n"> <i class="fas fa-columns" ,
+                          style="color:rgb(50,130,220)"></i> project page</a> /
+                      <a href="https://github.com/ruirangerfan/three_filters_to_normal"> <i class="fab fa-github" ,
+                        style="color:rgb(50,130,220)"></i> code</a> /
+                      <a href="https://sites.google.com/view/3f2n/datasets"> <i class="fas fa-database"
+                          , style="color:rgb(50,130,220)"></i> dataset</a> /
+                      <a href="https://www.youtube.com/watch?v=a_TdEHzvB5I"> <i class="fas fa-film"
+                        , style="color:rgb(50,130,220)"></i> video</a>
+                      <br>
+                      <p></p>
+                    </td>
+                  </tr>
+
+                  <tr onmouseout="font_stop()" onmouseover="font_start()" bgcolor="#ffffd0">
+                    <td style="padding:20px;width:25%;vertical-align:middle">
+                      <img src='images/wang2021learning_front.png' width=160px>
+                    </td>
+                    <td style="padding:20px;padding-top: 25px;width:75%;vertical-align:top">
+                      <a href="https://ieeexplore.ieee.org/document/9561334">
+                        <papertitle>Learning Interpretable End-to-End Vision-Based Motion Planning for Autonomous Driving with Optical Flow Distillation
+                        </papertitle>
+                      </a>
+                      <br>
+                      <em>IEEE International Conference on Robotics and Automation (ICRA)</em>, 2021
+                      <br>
+                      <br>
+                      <strong>Hengli Wang</strong>, Peide Cai, Yuxiang Sun, Lujia Wang, Ming Liu
+                      <br>
+                      <a href="https://arxiv.org/abs/2104.12861"> <i class="fas fa-link" ,
+                          style="color:rgb(50,130,220)"></i> arXiv</a> /
+                      <a href="./data/wang2021learning.txt"> <i class="fas fa-file" , style="color:rgb(50,130,220)"></i>
+                        bibtex</a> /
+                      <a href="https://sites.google.com/view/ivmp"> <i class="fas fa-columns" ,
+                          style="color:rgb(50,130,220)"></i> project page</a> /
+                      <a href="https://1drv.ms/v/s!AtQJ3jRpXokcg5AI-u1kE_aezYAurA?e=vWbbTq"> <i class="fas fa-film", style="color:rgb(50,130,220)"></i> video</a>
+                      <br>
+                      <p></p>
+                    </td>
+                  </tr>
+
+                  <tr onmouseout="font_stop()" onmouseover="font_start()" bgcolor="">
+                    <td style="padding:20px;width:25%;vertical-align:middle">
+                      <img src='images/wang2021s2p2_front.png' width=160px>
+                    </td>
+                    <td style="padding:20px;padding-top: 25px;width:75%;vertical-align:top">
+                      <a href="https://ieeexplore.ieee.org/document/9561314">
+                        <papertitle>S2P2: Self-Supervised Goal-Directed Path Planning Using RGB-D Data for Robotic Wheelchairs</papertitle>
+                      </a>
+                      <br>
+                      <em>IEEE International Conference on Robotics and Automation (ICRA)</em>, 2021
+                      <br>
+                      <br>
+                      <strong>Hengli Wang</strong>, Yuxiang Sun, Rui Fan, Ming Liu
+                      <br>
+                      <a href="https://arxiv.org/abs/2103.10210"> <i class="fas fa-link" ,
+                          style="color:rgb(50,130,220)"></i> arXiv</a> /
+                      <a href="./data/wang2021s2p2.txt"> <i class="fas fa-file" , style="color:rgb(50,130,220)"></i>
+                        bibtex</a> /
+                      <a href="https://sites.google.com/view/s2p2/"> <i class="fas fa-columns" ,
+                          style="color:rgb(50,130,220)"></i> project page</a> /
+                      <a href="https://www.youtube.com/watch?v=kG9N0QS1-8w"> <i class="fas fa-film"
+                          , style="color:rgb(50,130,220)"></i> video</a>
+                      <br>
+                      <p></p>
+                    </td>
+                  </tr>
+
+                  <tr onmouseout="font_stop()" onmouseover="font_start()" bgcolor="">
+                    <td style="padding:20px;width:25%;vertical-align:middle">
+                      <img src='images/fan2021learning_front.png' width=160px>
+                    </td>
+                    <td style="padding:20px;padding-top: 25px;width:75%;vertical-align:top">
+                      <a href="https://ieeexplore.ieee.org/document/9360504">
+                        <papertitle>Learning Collision-Free Space Detection from Stereo Images: Homography Matrix Brings Better Data Augmentation</papertitle>
+                      </a>
+                      <br>
+                      <em>IEEE Transactions on Mechatronics (T-MECH)</em>, 2021 (IF: 5.673)
+                      <br>
+                      <br>
+                      Rui Fan*, <strong>Hengli Wang*</strong>, Peide Cai, Jin Wu, Mohammud J. Bocus, Lei Qiao, Ming Liu
+                      <br>
+                      <a href="https://arxiv.org/abs/2012.07890"> <i class="fas fa-link" ,
+                          style="color:rgb(50,130,220)"></i> arXiv</a> /
+                      <a href="./data/fan2021learning.txt"> <i class="fas fa-file" , style="color:rgb(50,130,220)"></i>
+                        bibtex</a>
+                      <br>
+                      <p></p>
+                    </td>
+                  </tr>
+
+                  <tr onmouseout="font_stop()" onmouseover="font_start()" bgcolor="#ffffd0">
+                    <td style="padding:20px;width:25%;vertical-align:middle">
+                      <img src='images/wang2021sne_front.png' width=160px>
+                    </td>
+                    <td style="padding:20px;padding-top: 25px;width:75%;vertical-align:top">
+                      <a href="https://ieeexplore.ieee.org/document/9636723">
+                        <papertitle>SNE-RoadSeg+: Rethinking Depth-Normal Translation and Deep Supervision for Freespace Detection</papertitle>
+                      </a>
+                      <br>
+                      <em>IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</em>, 2021
+                      <br>
+                      <br>
+                      <strong>Hengli Wang*</strong>, Rui Fan*, Peide Cai, Ming Liu
+                      <br>
+                      <a href="https://arxiv.org/abs/2107.14599"> <i class="fas fa-link" ,
+                          style="color:rgb(50,130,220)"></i> arXiv</a> /
+                      <a href="./data/wang2021sne.txt"> <i class="fas fa-file" , style="color:rgb(50,130,220)"></i>
+                        bibtex</a> /
+                      <a href="https://www.sne-roadseg.site/sne-roadseg-plus"> <i class="fas fa-columns" ,
+                          style="color:rgb(50,130,220)"></i> project page</a>
+                      <br>
+                      <p></p>
+                    </td>
+                  </tr>
+
+                  <tr onmouseout="font_stop()" onmouseover="font_start()" bgcolor="">
+                    <td style="padding:20px;width:25%;vertical-align:middle">
+                      <img src='images/cai2021dignet_front.png' width=160px>
+                    </td>
+                    <td style="padding:20px;padding-top: 25px;width:75%;vertical-align:top">
+                      <a href="https://ieeexplore.ieee.org/document/9636376">
+                        <papertitle>DiGNet: Learning Scalable Self-Driving Policies for Generic Traffic Scenarios with Graph Neural Networks</papertitle>
+                      </a>
+                      <br>
+                      <em>IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</em>, 2021
+                      <br>
+                      <br>
+                      Peide Cai, <strong>Hengli Wang</strong>, Yuxiang Sun, Ming Liu
+                      <br>
+                      <a href="https://arxiv.org/abs/2011.06775"> <i class="fas fa-link" ,
+                          style="color:rgb(50,130,220)"></i> arXiv</a> /
+                      <a href="./data/cai2021dignet.txt"> <i class="fas fa-file" , style="color:rgb(50,130,220)"></i>
+                        bibtex</a> /
+                      <a href="https://sites.google.com/view/dignet-self-driving"> <i class="fas fa-columns" ,
+                          style="color:rgb(50,130,220)"></i> project page</a> /
+                      <a href="https://sites.google.com/view/dignet-self-driving/video-clips/"> <i class="fas fa-film"
+                          , style="color:rgb(50,130,220)"></i> video</a>
+                      <br>
+                      <p></p>
+                    </td>
+                  </tr>
+
+                  <tr onmouseout="font_stop()" onmouseover="font_start()" bgcolor="">
+                    <td style="padding:20px;width:25%;vertical-align:middle">
+                      <img src='images/cai2021vision_front.png' width=160px>
+                    </td>
+                    <td style="padding:20px;padding-top: 25px;width:75%;vertical-align:top">
+                      <a href="https://ieeexplore.ieee.org/document/9488179">
+                        <papertitle>Vision-Based Autonomous Car Racing Using Deep Imitative Reinforcement Learning</papertitle>
+                      </a>
+                      <br>
+                      <em>IEEE Robotics and Automation Letters (RA-L)</em>, 2021
+                      <br>
+                      presented at <em>IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</em>, 2021
+                      <br>
+                      <br>
+                      Peide Cai, <strong>Hengli Wang</strong>, Huaiyang Huang, Yuxuan Liu, Ming Liu
+                      <br>
+                      <a href="https://arxiv.org/abs/2107.08325"> <i class="fas fa-link" ,
+                          style="color:rgb(50,130,220)"></i> arXiv</a> /
+                      <a href="./data/cai2021vision.txt"> <i class="fas fa-file" , style="color:rgb(50,130,220)"></i>
+                        bibtex</a> /
+                      <a href="https://caipeide.site/autorace-dirl/"> <i class="fas fa-columns" ,
+                          style="color:rgb(50,130,220)"></i> project page</a> /
+                      <a href="https://www.youtube.com/watch?v=pe0lVfelwwc"> <i class="fas fa-film"
+                          , style="color:rgb(50,130,220)"></i> video</a>
+                      <br>
+                      <p></p>
+                    </td>
+                  </tr>
+
+                  <tr onmouseout="font_stop()" onmouseover="font_start()" bgcolor="">
+                    <td style="padding:20px;width:25%;vertical-align:middle">
+                      <img src='images/liu2020hercules_front.png' width=160px>
+                    </td>
+                    <td style="padding:20px;padding-top: 25px;width:75%;vertical-align:top">
+                      <a href="https://ieeexplore.ieee.org/document/9340284">
+                      <papertitle>The Role of the Hercules Autonomous Vehicle During the COVID-19 Pandemic: An Autonomous Logistic Vehicle for Contactless Goods Transportation</papertitle>
+                      </a>
+                      <br>
+                      <em>IEEE Robotics and Automation Magazine (RAM)</em>, 2021
+                      <br>
+                      presented at <em>IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</em>, 2021
+                      <br>
+                      <br>
+                      Tianyu Liu, Qinghai Liao, ..., <strong>Hengli Wang</strong>, ..., Ming Liu
+                      <br>
+                      <a href="https://arxiv.org/abs/2004.07480"> <i class="fas fa-link" ,
+                          style="color:rgb(50,130,220)"></i> arXiv</a> /
+                      <a href="./data/liu2021hercules.txt"> <i class="fas fa-file" , style="color:rgb(50,130,220)"></i>
+                        bibtex</a> /
+                      <a href="https://sites.google.com/view/hercules-vehicle"> <i class="fas fa-columns" ,
+                        style="color:rgb(50,130,220)"></i> project page</a> /
+                      <a href="https://www.youtube.com/watch?v=w_0oG3GIK_g"> <i class="fas fa-film"
+                          , style="color:rgb(50,130,220)"></i> video</a>
+                      <br>
+                      <p></p>
+                    </td>
+                  </tr>
+
+                  <tr onmouseout="uail_stop()" onmouseover="uail_start()" bgcolor="#ffffd0">
+                    <td style="padding:20px;width:25%;vertical-align:middle">
+                      <img src='images/wang2020cot_front.png' width=160>
+                    </td>
+                    <td style="padding:20px;padding-top: 25px;width:75%;vertical-align:top">
+                      <a href="https://proceedings.mlr.press/v155/wang21a.html">
+                      <papertitle>CoT-AMFlow: Adaptive Modulation Network with Co-Teaching Strategy for Unsupervised
+                        Optical Flow Estimation</papertitle>
+                      </a>
+                      <br>
+                      <em>Conference on Robot Learning (CoRL)</em>, 2020 (34% acceptance rate)
+                      <br>
+                      <br>
+                      <strong>Hengli Wang</strong>, Rui Fan, Ming Liu
+                      <br>
+                      <a href="https://arxiv.org/abs/2011.02156"> <i class="fas fa-link" ,
+                          style="color:rgb(50,130,220)"></i> arXiv</a> /
+                      <a href="./data/wang2020cot.txt"> <i class="fas fa-file" , style="color:rgb(50,130,220)"></i>
+                        bibtex</a> /
+                      <a href="https://sites.google.com/view/cot-amflow"> <i class="fas fa-columns" ,
+                          style="color:rgb(50,130,220)"></i> project page</a> /
+                      <a href="https://www.youtube.com/watch?v=LzL7QZhwFjE"> <i class="fas fa-film"
+                          , style="color:rgb(50,130,220)"></i> video</a>
+                      <br>
+                    </td>
+                  </tr>
+
+                  <tr onmouseout="font_stop()" onmouseover="font_start()" bgcolor="">
+                    <td style="padding:20px;width:25%;vertical-align:middle">
+                      <img src='images/wang2019applying_front.png' width=160px>
+                    </td>
+                    <td style="padding:20px;padding-top: 25px;width:75%;vertical-align:top">
+                      <a href="https://ieeexplore.ieee.org/document/9341340">
+                      <papertitle>Applying Surface Normal Information in Drivable Area and Road Anomaly Detection for
+                        Ground Mobile Robots</papertitle>
+                      </a>
+                      <br>
+                      <em>IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</em>, 2020
+                      <br>
+                      <br>
+                      <strong>Hengli Wang*</strong>, Rui Fan*, Yuxiang Sun, Ming Liu
+                      <br>
+                      <a href="https://arxiv.org/abs/2008.11383"> <i class="fas fa-link" ,
+                          style="color:rgb(50,130,220)"></i> arXiv</a> /
+                      <a href="./data/wang2020applying.txt"> <i class="fas fa-file" , style="color:rgb(50,130,220)"></i>
+                        bibtex</a> /
+                      <a href="https://github.com/hlwang1124/NIM"> <i class="fab fa-github" ,
+                          style="color:rgb(50,130,220)"></i> code</a>
+                      <br>
+                      <p></p>
+                    </td>
+                  </tr>
+
+                  <tr onmouseout="uail_stop()" onmouseover="uail_start()" bgcolor="#ffffd0">
+                    <td style="padding:20px;width:25%;vertical-align:middle">
+                      <img src='images/fan2020sne_front.png' width=160>
+                    </td>
+                    <td style="padding:20px;padding-top: 25px;width:75%;vertical-align:top">
+                      <a href="https://link.springer.com/chapter/10.1007/978-3-030-58577-8_21">
+                        <papertitle>SNE-RoadSeg: Incorporating Surface Normal Information into Semantic Segmentation for
+                          Accurate Freespace Detection</papertitle>
+                      </a>
+                      <br>
+                      <em>European Conference on Computer Vision (ECCV)</em>, 2020
+                      <br>
+                      <br>
+                      Rui Fan*, <strong>Hengli Wang*</strong>, Peide Cai, Ming Liu
+                      <br>
+                      <a href="https://arxiv.org/abs/2008.11351"> <i class="fas fa-link" ,
+                          style="color:rgb(50,130,220)"></i> arXiv</a> /
+                      <a href="./data/fan2020sne.txt"> <i class="fas fa-file" , style="color:rgb(50,130,220)"></i>
+                        bibtex</a> /
+                      <a href="https://sites.google.com/view/sne-roadseg"> <i class="fas fa-columns" ,
+                          style="color:rgb(50,130,220)"></i> project page</a> /
+                      <a href="https://github.com/hlwang1124/SNE-RoadSeg"> <i class="fab fa-github" ,
+                          style="color:rgb(50,130,220)"></i> code</a> /
+                      <a href="https://sites.google.com/view/sne-roadseg/dataset"> <i class="fas fa-database"
+                          , style="color:rgb(50,130,220)"></i> dataset</a> /
+                      <a href="https://www.youtube.com/watch?v=wWrZhDuh6xc"> <i class="fas fa-film"
+                        , style="color:rgb(50,130,220)"></i> video</a>
+                      <br>
+                    </td>
+                  </tr>
+
+                  <tr onmouseout="font_stop()" onmouseover="font_start()" bgcolor="">
+                    <td style="padding:20px;width:25%;vertical-align:middle">
+                      <img src='images/wang2020atg_front.png' width=160px>
+                    </td>
+                    <td style="padding:20px;padding-top: 25px;width:75%;vertical-align:top">
+                      <a href="https://link.springer.com/chapter/10.1007/978-3-030-66823-5_32">
+                        <papertitle>ATG-PVD: Ticketing Parking Violations on a Drone</papertitle>
+                      </a>
+                      <br>
+                      <em>European Conference on Computer Vision (ECCV) Workshops</em>, 2020
+                      <br>
+                      <br>
+                      <strong>Hengli Wang*</strong>, Yuxuan Liu*, Huaiyang Huang*, Yuheng Pan*, Wenbin Yu, Jialin Jiang,
+                      Dianbin Lyu, Mohammud J. Bocus, Ming Liu, Ioannis Pitas, Rui Fan
+                      <br>
+                      <a href="https://arxiv.org/abs/2008.09305"> <i class="fas fa-link" ,
+                          style="color:rgb(50,130,220)"></i> arXiv</a> /
+                      <a href="./data/wang2020atg.txt"> <i class="fas fa-file" , style="color:rgb(50,130,220)"></i>
+                        bibtex</a> /
+                      <a href="https://sites.google.com/view/atg-pvd"> <i class="fas fa-columns" ,
+                          style="color:rgb(50,130,220)"></i> project page</a> /
+                      <!-- <a href="https://github.com/ATG-PVD/ATG-PVD-FlowRCNN"> <i class="fab fa-github" ,
+                          style="color:rgb(50,130,220)"></i> code</a> / -->
+                      <a href="https://sites.google.com/view/atg-pvd/dataset"> <i class="fas fa-database" ,
+                          style="color:rgb(50,130,220)"></i> dataset</a> /
+                      <a href="https://www.youtube.com/watch?v=byfa7-fT4j4"> <i class="fas fa-film"
+                          , style="color:rgb(50,130,220)"></i> video</a>
+                      <br>
+                      <p></p>
+                    </td>
+                  </tr>
+
+                  <tr onmouseout="font_stop()" onmouseover="font_start()" bgcolor="">
+                    <td style="padding:20px;width:25%;vertical-align:middle">
+                      <img src='images/fan2020we_front.png' width=160px>
+                    </td>
+                    <td style="padding:20px;padding-top: 25px;width:75%;vertical-align:top">
+                      <a href="https://link.springer.com/chapter/10.1007/978-3-030-66823-5_17">
+                        <papertitle>We Learn Better Road Pothole Detection: From Attention Aggregation to Adversarial
+                          Domain Adaptation</papertitle>
+                      </a>
+                      <br>
+                      <em>European Conference on Computer Vision (ECCV) Workshops</em>, 2020
+                      <br>
+                      <br>
+                      Rui Fan*, <strong>Hengli Wang*</strong>, Mohammud J. Bocus, Ming Liu
+                      <br>
+                      <a href="https://arxiv.org/abs/2008.06840"> <i class="fas fa-link" ,
+                          style="color:rgb(50,130,220)"></i> arXiv</a> /
+                      <a href="./data/fan2020we.txt"> <i class="fas fa-file" , style="color:rgb(50,130,220)"></i>
+                        bibtex</a> /
+                      <a href="https://sites.google.com/view/pothole-600"> <i class="fas fa-columns" ,
+                          style="color:rgb(50,130,220)"></i> project page</a> /
+                      <a href="https://github.com/hlwang1124/AAFramework"> <i class="fab fa-github" ,
+                          style="color:rgb(50,130,220)"></i> code</a> /
+                      <a href="https://sites.google.com/view/pothole-600/dataset"> <i class="fas fa-database"
+                          , style="color:rgb(50,130,220)"></i> dataset</a>
+                      <br>
+                      <p></p>
+                    </td>
+                  </tr>
+
+                  <tr onmouseout="font_stop()" onmouseover="font_start()" bgcolor="">
+                    <td style="padding:20px;width:25%;vertical-align:middle">
+                      <img src='images/cai2020vtgnet_front.png' width=160px>
+                    </td>
+                    <td style="padding:20px;padding-top: 25px;width:75%;vertical-align:top">
+                      <a href="https://ieeexplore.ieee.org/document/9240067">
+                        <papertitle>VTGNet: A Vision-Based Trajectory Generation Network for Autonomous Vehicles in
+                          Urban Environments</papertitle>
+                      </a>
+                      <br>
+                      <em>IEEE Transactions on Intelligent Vehicles (T-IV)</em>, 2020
+                      <br>
+                      <br>
+                      Peide Cai, Yuxiang Sun, <strong>Hengli Wang</strong>, Ming Liu
+                      <br>
+                      <a href="https://arxiv.org/abs/2004.12591"> <i class="fas fa-link" ,
+                          style="color:rgb(50,130,220)"></i> arXiv</a> /
+                      <a href="./data/cai2020vtgnet.txt"> <i class="fas fa-file" , style="color:rgb(50,130,220)"></i>
+                        bibtex</a> /
+                      <a href="https://sites.google.com/view/vtgnet/"> <i class="fas fa-columns" ,
+                          style="color:rgb(50,130,220)"></i> project page</a> /
+                      <a href="https://github.com/caipeide/VTGNet"> <i class="fab fa-github" ,
+                          style="color:rgb(50,130,220)"></i> code</a> /
+                      <a
+                        href="https://www.google.com/url?q=https%3A%2F%2Fhkustconnect-my.sharepoint.com%2F%3Af%3A%2Fg%2Fpersonal%2Fpcaiaa_connect_ust_hk%2FEjWxfijz48lCvMWTsYLutegBQFmqNliFQsOZF60LbkwAXg%3Fe%3DoVSt6h&sa=D&sntz=1&usg=AFQjCNGYaDI75TrcdOE56ZrOZH4c9v7hAA">
+                        <i class="fas fa-database" , style="color:rgb(50,130,220)"></i> dataset</a> /
+                      <a href="https://www.youtube.com/watch?v=ieb2lwQ3t5c"> <i class="fas fa-film"
+                          , style="color:rgb(50,130,220)"></i> video</a>
+                      <br>
+                      <p></p>
+                    </td>
+                  </tr>
+
+                  <tr onmouseout="font_stop()" onmouseover="font_start()" bgcolor="">
+                    <td style="padding:20px;width:25%;vertical-align:middle">
+                      <img src='images/sun2020fuseseg_front.png' width=160px>
+                    </td>
+                    <td style="padding:20px;padding-top: 25px;width:75%;vertical-align:top">
+                      <a href="https://ieeexplore.ieee.org/document/9108585">
+                        <papertitle>FuseSeg: Semantic Segmentation of Urban Scenes Based on RGB and Thermal Data Fusion
+                        </papertitle>
+                      </a>
+                      <br>
+                      <em>IEEE Transactions on Automation Science and Engineering (T-ASE)</em>, 2020
+                      <br>
+                      <br>
+                      Yuxiang Sun, Weixun Zuo, Peng Yun, <strong>Hengli Wang</strong>, Ming Liu
+                      <br>
+                      <a href="./data/sun2020fuseseg.pdf"> <i class="far fa-file-pdf" ,
+                          style="color:rgb(50,130,220)"></i> pdf</a> /
+                      <a href="./data/sun2020fuseseg.txt"> <i class="fas fa-file" , style="color:rgb(50,130,220)"></i>
+                        bibtex</a> /
+                      <a href="https://www.youtube.com/watch?v=NqCr7WNGoSc"> <i class="fas fa-film"
+                          , style="color:rgb(50,130,220)"></i> video</a>
+                      <br>
+                      <p></p>
+                    </td>
+                  </tr>
+
+                  <tr onmouseout="font_stop()" onmouseover="font_start()" bgcolor="">
+                    <td style="padding:20px;width:25%;vertical-align:middle">
+                      <img src='images/wang2019self_front.png' width=160px>
+                    </td>
+                    <td style="padding:20px;padding-top: 25px;width:75%;vertical-align:top">
+                      <a href="https://ieeexplore.ieee.org/abstract/document/8786197">
+                        <papertitle>Self-Supervised Drivable Area and Road Anomaly Segmentation Using RGB-D Data for
+                          Robotic Wheelchairs</papertitle>
+                      </a>
+                      <br>
+                      <em>IEEE Robotics and Automation Letters (RA-L)</em>, 2019
+                      <br>
+                      <br>
+                      <strong>Hengli Wang</strong>, Yuxiang Sun, Ming Liu
+                      <br>
+                      <a href="https://arxiv.org/abs/2007.05950"> <i class="fas fa-link" ,
+                          style="color:rgb(50,130,220)"></i> arXiv</a> /
+                      <a href="./data/wang2019self.txt"> <i class="fas fa-file" , style="color:rgb(50,130,220)"></i>
+                        bibtex</a> /
+                      <a href="https://github.com/hlwang1124/SSLG"> <i class="fab fa-github" ,
+                          style="color:rgb(50,130,220)"></i> code</a> /
+                      <a href="https://github.com/hlwang1124/GMRPD"> <i class="fas fa-database" ,
+                          style="color:rgb(50,130,220)"></i> dataset</a>
+                      <br>
+                      <p></p>
+                    </td>
+                  </tr>
+
+                </tbody>
+              </table>
+
+              <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+                <tbody>
+                  <tr>
+                    <td>
+                      <heading>Service</heading>
+                      <p>
+                      <ul>
+                        <li>Journal review for <strong>IEEE T-PAMI</strong>, <strong>IEEE T-IP</strong>, <strong>IEEE T-RO</strong>, <strong>IEEE T-NNLS</strong>, <strong>IEEE T-ITS</strong>, <strong>IEEE T-VT</strong>, <strong>IEEE T-IM</strong>, <strong>IEEE SP-L</strong>, and <strong>IEEE RA-L</strong>.</li>
+                        <li>Conference review for <strong>AAAI 2023</strong>, <strong>ECCV 2022</strong>, <strong>ICCV 2021</strong>, <strong>CVPR 2021-2023</strong>, <strong>BMVC 2020-2022</strong>, <strong>ICIP 2021-2022</strong>, <strong>ICAS 2021</strong>, <strong>IROS 2019-2023</strong>, and <strong>ICRA 2019-2023</strong>.</li>
+                        <li>Technical program committee for <a href="https://avvision.xyz/wacv21/">the 1st AVVision Workshop</a> in conjunction with WACV 2021, <a href="https://avvision.xyz/iccv21/">the 2nd AVVision Workshop</a> in conjunction with ICCV 2021, <a href="https://avvision.xyz/eccv22/">the 3rd AVVision Workshop</a> in conjunction with ECCV 2022, and special sessions in ICIP 2021, ICAS 2021 as well as IROS 2021.</li>
+                      </ul>
+                      </p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <table
+                style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                <tbody>
+                  <tr>
+                    <td style="padding:0px">
+                      <br>
+                      <p style="text-align:right;font-size:small;">
+                        <a href="https://jonbarron.info/">Page template</a>
+                      </p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+        </td>
+      </tr>
+  </table>
+</body>
+
+</html>
