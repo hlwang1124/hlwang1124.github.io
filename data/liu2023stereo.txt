@@ -1,0 +1,10 @@
+@Inbook{liu2023stereo,
+  title     = {Stereo Matching: Fundamentals, State-of-the-Art, and Existing Challenges},
+  author    = {Liu, Chuang-Wei and Wang, Hengli and Guo, Sicen and Bocus, Mohammud J and Chen, Qijun and Fan, Rui},
+  bookTitle = {Autonomous Driving Perception: Fundamentals and Applications},
+  pages     = {63--100},
+  year      = {2023},
+  publisher = {Springer Nature Singapore},
+  doi       = {10.1007/978-981-99-4287-9_3}
+  url       = {https://doi.org/10.1007/978-981-99-4287-9_3}
+}
